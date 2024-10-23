@@ -1,5 +1,7 @@
 import { CalEmbed } from "@/components/cal-embed";
 
+export const runtime = "edge";
+
 export const metadata = {
   title: "Talk to us",
 };
