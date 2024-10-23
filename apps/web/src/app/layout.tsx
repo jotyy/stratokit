@@ -1,5 +1,4 @@
 import "@stratokit/ui/globals.css";
-import "cal-sans";
 
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
