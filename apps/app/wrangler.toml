@@ -1,0 +1,19 @@
+name = "chatflare"
+compatibility_date = "2024-09-03"
+compatibility_flags = [ "nodejs_compat" ]
+pages_build_output_dir = ".vercel/output/static"
+
+[placement]
+mode = "smart"
+
+[[d1_databases]]
+binding = "DATABASE"
+database_name = "chatflare-db"
+database_id = "d6f63af0-f6ca-4f5a-a093-dc2d64bdcfe9"
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE"
+index_name = "chatflare-index"

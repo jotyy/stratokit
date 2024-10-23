@@ -1,0 +1,3 @@
+{
+  "extends": "@stratokit/typescript/base.json"
+}
