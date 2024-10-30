@@ -1,0 +1,43 @@
+{
+  "name": "@stratokit/db",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "db:check": "drizzle-kit check",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:migrate:drop": "drizzle-kit drop",
+    "db:pull": "drizzle-kit introspect",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@stratokit/env": "workspace:*",
+    "@stratokit/logger": "workspace:*",
+    "@t3-oss/env-core": "^0.11.1",
+    "@types/bun": "^1.1.12",
+    "drizzle-orm": "^0.35.3",
+    "drizzle-zod": "^0.5.1",
+    "react": "^18.3.1",
+    "server-only": "^0.0.1",
+    "zennv": "^0.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.26.2",
+    "next-auth": "^5.0.0-beta.20",
+    "typescript": "^5.5.4"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./db": "./src/db.ts",
+    "./env": "./env.ts",
+    "./schema": "./src/schema.ts"
+  }
+}

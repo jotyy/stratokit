@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/globals.css",
+    "baseColor": "gray",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@stratokit/ui/components",
+    "hooks": "@stratokit/ui/hooks",
+    "lib": "@stratokit/ui/lib",
+    "ui": "@stratokit/ui/components",
+    "utils": "@stratokit/ui/cn"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "@stratokit/app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "lint": "biome lint",
+    "format": "biome format --write .",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "pages:build": "bunx @cloudflare/next-on-pages",
+    "preview": "bun pages:build && wrangler pages dev",
+    "deploy": "bun pages:build && wrangler pages deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
+  },
+  "dependencies": {
+    "@auth/drizzle-adapter": "^1.4.2",
+    "@cloudflare/ai": "^1.2.2",
+    "@hookform/resolvers": "^3.9.1",
+    "@sindresorhus/slugify": "^2.2.1",
+    "@stratokit/analytics": "workspace:*",
+    "@stratokit/db": "workspace:*",
+    "@stratokit/env": "workspace:*",
+    "@stratokit/kv": "workspace:*",
+    "@stratokit/ui": "workspace:*",
+    "ai": "^3.4.27",
+    "geist": "^1.3.1",
+    "next": "14.2.7",
+    "next-auth": "^5.0.0-beta.20",
+    "next-safe-action": "^7.9.0",
+    "next-themes": "^0.3.0",
+    "nuqs": "^1.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.1",
+    "sonner": "^1.5.0",
+    "stripe": "^17.2.1",
+    "workers-ai-provider": "^0.0.10",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/next-on-pages": "1",
+    "@cloudflare/workers-types": "^4.20240903.0",
+    "@sentry/nextjs": "^8",
+    "@types/node": "^22",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5.5.4"
+  }
+}

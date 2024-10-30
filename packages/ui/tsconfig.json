@@ -1,0 +1,12 @@
+{
+  "extends": "@stratokit/typescript/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "strict": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
