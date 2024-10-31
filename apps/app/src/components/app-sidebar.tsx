@@ -70,7 +70,7 @@ const data = {
       items: [
         {
           title: "General",
-          url: "/settings/general",
+          url: "/settings",
         },
         {
           title: "Team",

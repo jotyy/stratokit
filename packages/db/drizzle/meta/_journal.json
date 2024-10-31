@@ -8,6 +8,20 @@
       "when": 1730209718999,
       "tag": "0000_setup",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1730294587208,
+      "tag": "0001_user_role",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1730295399700,
+      "tag": "0002_graceful_skrulls",
+      "breakpoints": true
     }
   ]
 }

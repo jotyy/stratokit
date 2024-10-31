@@ -1,0 +1,1 @@
+ALTER TABLE `user` ADD `role` text(20) DEFAULT 'member' NOT NULL;
