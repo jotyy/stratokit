@@ -12,9 +12,11 @@
     "clean": "rm -rf .turbo node_modules",
     "lint": "biome check .",
     "format": "biome --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "dev": "ladle serve --port 6006"
   },
   "devDependencies": {
+    "@ladle/react": "^4.1.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.43",
     "react": "^18.3.1",
@@ -112,6 +114,7 @@
     "recharts": "^2.13.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-border-image": "^1.1.2",
     "usehooks-ts": "^3.1.0",
     "vaul": "^1.1.0"
   }
